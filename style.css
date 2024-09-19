@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+body .background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+}
+#player{
+    width: 250pt;
+    height: 300pt;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    z-index: 1;
+    overflow: hidden;
+}
+.player__music{
+    width: 100%;
+    height: 70%;
+    z-index: 2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.player__box{
+    height: 200px;
+    margin-top: -4px;
+    background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#tracker{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 0;
+}
+.play__pause{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    filter: invert(1);
+}
+#song .artist{
+    color: rgb(193, 255, 6);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+#song .title{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+#previous__next{
+    display: flex;
+    flex-direction: column;
+}
+#previous__next img{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+}
+.time{
+    margin: 0 auto;
+    width: 220px;
+    font-family: 'Montserrat', sans-serif;
+}
+#progress-bar{
+    appearance: none;
+    z-index: 4;
+    height: 5px;
+    background: #000000;
+    width: 160pt;
+    border-radius: 30px;
+}
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -3px;
+    margin-left: 0px;
+    height: 10px;
+    width: 7px;
+    border: 0;
+    background: -webkit-linear-gradient(45deg, rgb(213, 213, 213), rgb(193, 255, 6));
+    border-radius: 30px;
+    cursor: pointer;
+}
+.duration__time{
+    text-align: right;
+    height: 13px;
+    color: rgb(193, 255, 6);
+}
+.current__time{
+    color: white;
+}
+footer{
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    height: 60px;
+    font-size: 20px;
+}
+.footer__data{
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+}
+footer a{
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.rs__school {
+    display: flex;
+    width: 135px;
+    height: 50px;
+    margin-right: 40px;
+}
+.rs__school svg {
+    width: 135px;
+    height: 50px;
+}
+.rs__school svg path {
+    transition: 0.5s ease;
+}
+.rs__school:hover svg path {
+    fill: #bdae82;
+    transition: 0.5s ease;
+}
